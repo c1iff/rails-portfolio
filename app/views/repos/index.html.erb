@@ -1,0 +1,12 @@
+<br><br><br><br><br>
+
+<div class="container">
+
+  <h3><%= link_to "Back", '/' %></h3>
+  <% @repos.each do |group|%>
+    <% group.each do |repo| %>
+      <h5><%= link_to repo['name'], repo['html_url'] %></h5>
+    <% end %>
+  <% end %>
+
+</div>

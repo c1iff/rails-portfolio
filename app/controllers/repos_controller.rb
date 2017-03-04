@@ -1,23 +1,9 @@
 class ReposController < ApplicationController
 
   def index
-
-  end
-
-  def show
-  end
-
-  def new
-
-  end
-
-  def edit
+    repo = Repo.new
+    @repos = repo.get_data
   end
 
 
-  private
-
-    def contact_params
-      params.require(:contact).permit(:first_name, :last_name, :number, :email, :user_id)
-    end
 end
