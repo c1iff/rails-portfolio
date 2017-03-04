@@ -38,6 +38,8 @@ gem 'bootstrap-sass'
 
 gem 'httparty'
 
+gem 'devise'
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -49,6 +51,9 @@ group :development, :test do
   gem 'shoulda-matchers'
   gem 'vcr'
   gem 'webmock'
+  gem 'capybara'
+  gem 'factory_girl_rails'
+  gem 'simplecov', require: false
 end
 
 group :development do

@@ -1,4 +1,4 @@
-class Repo < ApplicationRecord
+class Repo 
 
 
   def get_data
